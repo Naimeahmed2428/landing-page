@@ -1,65 +1,181 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Monetization Landing Page</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>কোর্স ল্যান্ডিং পেজ - ফেসবুক মনিটাইজেশন</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'SolaimanLipi';
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .course-header {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .course-image {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .course-image img {
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .course-info {
+            flex: 1.2;
+            min-width: 300px;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-top: 0;
+        }
+
+        .price-section {
+            margin: 20px 0;
+        }
+
+        .current-price {
+            font-size: 28px;
+            color: #e91e63;
+            font-weight: bold;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: #888;
+            margin-left: 10px;
+        }
+
+        .cart-section {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        input[type="number"] {
+            width: 50px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        .btn-add-cart {
+            background-color: #e91e63;
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn-add-cart:hover {
+            background-color: #c2185b;
+        }
+
+        .description-box {
+            margin-top: 30px;
+            border: 1px dotted #ccc;
+            padding: 20px;
+        }
+
+        .tabs {
+            border-bottom: 2px solid #ddd;
+            margin-bottom: 15px;
+        }
+
+        .tab {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #eee;
+            border-radius: 5px 5px 0 0;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .description-content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .description-content li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .tick {
+            color: green;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .course-header {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
-<body class="bg-white text-gray-800">
+<body>
 
-  <!-- Hero Section -->
-  <section class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-16 text-center px-4">
-    <h1 class="text-3xl md:text-5xl font-bold mb-4">Facebook & YouTube Monetization শুরু করুন</h1>
-    <p class="text-lg mb-6">এখনই আপনার পেজ ও চ্যানেল থেকে ইনকাম শুরু করুন — সম্পূর্ণ গাইড ও সেটআপ সহ</p>
-    <a href="#order" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold">🚀 এখনই শুরু করুন</a>
-  </section>
+<div class="container">
+    <div class="course-header">
+        <div class="course-image">
+            <img src="course-thumb.jpg" alt="কোর্স থাম্বনেইল">
+        </div>
 
-  <!-- Video Section -->
-  <section class="py-10 text-center">
-    <h2 class="text-2xl font-bold mb-4"> দেখুন</h2>
-    <div class="max-w-3xl mx-auto">
-      <iframe class="w-full h-64 md:h-96 rounded-xl" src="https://www.youtube.com/embed/WOfXNhuIggs" frameborder="0" allowfullscreen></iframe>
+        <div class="course-info">
+            <h1>ফেসবুক, ইউটিউব, মনিটাইজেশন এর A To Z কোর্স</h1>
+            <div class="price-section">
+                <span class="current-price">১৫০.০০ টাকা</span>
+                <span class="old-price">২,০০০.০০ টাকা</span>
+            </div>
+            
+            <div class="cart-section">
+                <span>Qty:</span>
+                <input type="number" value="1">
+                <button class="btn-add-cart">Add to cart</button>
+            </div>
+            <p>Category: Digital Marketing</p>
+        </div>
     </div>
-  </section>
 
-  <!-- Features -->
-  <section class="py-12 bg-gray-100 text-center px-4">
-    <h2 class="text-3xl font-bold mb-8">আপনি যা পাবেন</h2>
-    <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-      <div class="bg-white p-6 rounded-xl shadow">
-        <h3 class="text-xl font-semibold mb-2">Monetization Setup</h3>
-        <p>Facebook ও YouTube ফেসবুক, ইউটিউব, মনিটাইজেশন এর A To Z কোর্স</p>
-      </div>
-      <div class="bg-white p-6 rounded-xl shadow">
-        <h3 class="text-xl font-semibold mb-2">Step-by-Step Guide</h3>
-        <p>নতুনদের জন্য সহজ গাইড</p>
-      </div>
-      <div class="bg-white p-6 rounded-xl shadow">
-        <h3 class="text-xl font-semibold mb-2">Earning Strategy</h3>
-        <p>কিভাবে দ্রুত ইনকাম করবেন তার স্ট্র্যাটেজি</p>
-      </div>
+    <div class="description-box">
+        <div class="tabs">
+            <div class="tab">DESCRIPTION</div>
+        </div>
+        <div class="description-content">
+            <p><strong>এই কোর্সে যা যা শিখতে পারবেন:</strong></p>
+            <ul>
+                <li><span class="tick">✔</span> ভিডিও ভাইরাল করার গোপন ট্রিক্স।</li>
+                <li><span class="tick">✔</span> ফেসবুক ইন-স্ট্রিম অ্যাডস সেটআপ।</li>
+                <li><span class="tick">✔</span> ইউটিউব মনিটাইজেশন এবং এসইও।</li>
+                <li><span class="tick">✔</span> প্রফেশনাল ভিডিও এডিটিং মাস্টারক্লাস।</li>
+                <li><span class="tick">✔</span> পেজ মনিটাইজেশন পলিসি ইস্যু সমাধান।</li>
+            </ul>
+        </div>
     </div>
-  </section>
-
-  <!-- Proof Section -->
-  <section class="py-12 text-center px-4">
-    <h2 class="text-3xl font-bold mb-6">প্রুফ ও রেজাল্ট</h2>
-    <p class="mb-6">রিয়েল আর্নিং স্ক্রিনশট ও ক্লায়েন্ট রেজাল্ট</p>
-    <img src="https://via.placeholder.com/600x300" class="mx-auto rounded-xl shadow" alt="proof">
-  </section>
-
-  <!-- Price Section -->
-  <section class="py-12 bg-blue-600 text-white text-center" id="order">
-    <h2 class="text-3xl font-bold mb-4">আজকের স্পেশাল অফার</h2>
-    <p class="text-xl mb-6">মাত্র ৳130</p>
-    <a href="https://wa.me/8801816693891" class="bg-white text-blue-600 px-8 py-3 rounded-full font-bold">📲 WhatsApp এ অর্ডার করুন</a>
-  </section>
-
-  <!-- Footer -->
-  <footer class="py-6 text-center text-gray-500">
-    <p>© 2026 Your Brand. All rights reserved.</p>
-  </footer>
+</div>
 
 </body>
 </html>
